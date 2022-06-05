@@ -43,8 +43,8 @@ namespace Projeto_Lattine_Group.Controllers
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("lattine-chave-autenticacao"));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
-                issuer: "Lattine",
-                audience: "Lattine",
+                issuer: "lattine",
+                audience: "lattine",
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: creds
