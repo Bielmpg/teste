@@ -7,15 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllersWithViews();
-
-builder.Services.AddDbContext<Contexto>
-    (options => options.UseSqlServer
-    ("Data Source=lattineservidor.database.windows.net;Initial Catalog=lattine;User ID=lattine;Password=Senai@132"));
-
-
 namespace Projeto_Lattine_Group
 {
     public class Program
@@ -33,3 +24,10 @@ namespace Projeto_Lattine_Group
                 });
     }
 }
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Contexto>
+    (options => options.UseSqlServer
+    ("Data Source=lattineservidor.database.windows.net;Initial Catalog=lattine;User ID=lattine;Password=Senai@132"));
