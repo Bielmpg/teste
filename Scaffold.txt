@@ -1,1 +1,0 @@
-Scaffold-DbContext "Data Source=NOTE0113B3\SQLEXPRESS; initial catalog=lattine; user Id=lattine; pwd=Senai@132;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Domains -ContextDir Contexts -Context Projeto_Lattine_Group -force
