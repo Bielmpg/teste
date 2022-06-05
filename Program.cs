@@ -7,6 +7,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Contexto>
+    (options => options.UseSqlServer
+    ("Data Source=DESKTOP-NFKMOF8\\SQLBIA;Initial Catalog=lattine;User ID=lattine;Password=lattineservidor.database.windows.net"));
+
+
 namespace Projeto_Lattine_Group
 {
     public class Program
