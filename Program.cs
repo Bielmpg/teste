@@ -13,7 +13,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>
     (options => options.UseSqlServer
-    ("Data Source=DESKTOP-NFKMOF8\\SQLBIA;Initial Catalog=lattine;User ID=lattine;Password=lattineservidor.database.windows.net"));
+    ("Data Source=lattineservidor.database.windows.net;Initial Catalog=lattine;User ID=lattine;Password=Senai@132"));
 
 
 namespace Projeto_Lattine_Group
