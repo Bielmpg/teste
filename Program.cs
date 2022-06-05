@@ -30,4 +30,4 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>
     (options => options.UseSqlServer
-    ("Data Source=lattineservidor.database.windows.net;Initial Catalog=lattine;User ID=lattine;Password=Senai@132"));
+    ("Server=tcp:lattineservidor.database.windows.net,1433;Initial Catalog=lattine;Persist Security Info=False;User ID=lattine;Password=Senai@132;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
